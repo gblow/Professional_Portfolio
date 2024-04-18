@@ -187,13 +187,13 @@
   
   /* Portfolio Project Images */
   .horiseon {
-    background-image: url("../images/horiseon.svg");
+    background-image: url("./horiseon.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
   
   .comingSoon {
-    background-image: url("../images/comingSoon2.svg");
+    background-image: url("./comingSoon2.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
@@ -201,7 +201,7 @@
   }
   
   .weather {
-    background-image: url("../images/weather2.svg");
+    background-image: url("./images/weather2.svg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
