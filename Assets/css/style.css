@@ -1,0 +1,269 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: rgb(140, 85, 85);
+    --secondary: rgb(16, 93, 95);
+    --dark: rgb(1, 1, 19);
+  }
+
+  .headerPicture {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: 10px auto;
+}
+  
+  body {
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--primary);
+    background-color: var(--dark);
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  h1, h2, h3, p {
+    margin: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    padding: 20px 7% 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    box-shadow: 0 3px 20px rgba(11, 225, 233, 0.729);
+  }
+  
+  header h1 {
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    color: var(--primary);
+    background-color: var(--secondary);
+    line-height: 1;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 75%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    font-size: 1.4rem;
+  }
+  
+  nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+ .page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  .page-section > div {
+    box-shadow: 0 3px 20px rgba(11, 225, 233, 0.729);
+    flex: 0 0 75%;
+  }
+  
+  
+  /* Flex Container Styles */
+  .flex-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--primary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-size: 20%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+  
+  .flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+  }
+  
+  .flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .flex-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
+
+  
+/* Contact Section Styles */
+.section-contact {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .section-contact > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  .section-contact > div {
+    
+    flex: 0 0 75%;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  .contact-list li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-list a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .contact-list a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Portfolio Project Images */
+  .horiseon {
+    background-image: url("../images/horiseon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  .comingSoon {
+    background-image: url("../images/comingSoon2.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+  
+  }
+  
+  .weather {
+    background-image: url("../images/weather2.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  
+  
+  /* Media Queries */
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+
+/* Page Section Styles */
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    text-align: center; /* Center text */
+  }
+  
+  .page-section > h2 {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Adjust font size as needed */
+  }
+  
+  .page-section > div {
+    box-shadow: 0 5px 35px rgba(11, 225, 233, 0.729);
+    padding: 20px;
+    width: 100%; /* Make each section full-width */
+    max-width: 800px; /* Limit the maximum width if needed */
+    height: auto; /* Set a fixed height for each section */
+    overflow: hidden; /* Hide overflow content if needed */
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 780px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+  
+    .contact {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  

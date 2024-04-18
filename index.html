@@ -4,96 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Giovanni's Portfolio</title>
-    <link rel="resetsheet" href="./Assets/reset.css">
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <main>
 <body>
-    <header class="main-header">
-    <h1>Giovanni Blow </h1> 
-    <ul id="navbar">
-      <li><a href="#about-me-section" title="About Me"> About Me </a></li>
-       <li><a href="#project-header" title="Projects"> Projects</a></li>
-       <li><a href="#contact-header" title="Contact Me"> Contact Me </a></li>
-    </ul>
-    </header>
+  <header>
+    <h1>Giovanni Blow</h1>
+    <nav>
+      <a href="#aboutMe">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contactMe">Contact Me</a>
+    </nav>
+  </header>
 
     <section>
-        <img class="main-picture" src="./Assets/header.png" alt="Images of Giovanni Blow from her Instagram feed">
-        <div class="main-picture-container">
+        <img class="headerPicture" src="./Assets/images/header.svg" alt="Giovanni Blow Header with name">
+        <div class="headerPicture-container">
         
             </div>
-            <div class="main-picture"></div>
+            <div class="headerPicture"></div>
           </div>
     </section>
   
-    <section>
-      <div class="about-me-section" id="about-me-section">
-        <div class="about-header">
-          <h2>About Me</h2>
-          <div class="vertical-line-1"></div>
-        </div>
-        <div class="about-me-text">
-          <p>Hello! I'm Giovanni, and I am glad yuo have come across my portfolio. 
+    <main class="page-wrapper">
+     <!-- about me container -->
+      <section class="page-section" id="aboutMe">
+        <h2>About Me</h2>
+        <div>
+          <p>
+          <p>Hello! I'm Giovanni, It's nice to meet you without meeting you! 
             I am a HRIS Manager for a well known manaufacturing company. I enjoy learning new skills and solving difficult problems. I am currently a student at at UCLA, where I am pursuing a certification in full-stack coding course.
             With a strong background in systems technology, I thrive in environments where I can be creatively me while still meeting the demands and requirments of the customer. In my free time I have a love for travel, design and staging homes for vaction rentals. Send me an email, I'd love to connect with you!</p>
-        </div>
+          </p>
+        </section>
+
+ <!-- portfolio container -->
+ <section class="page-section" id="projects">
+  <h2>Projects</h2>
+  <div class="flex-container">
+
+    <a href="#" class="flex-item horiseon ">
+      <div>
+        <h3>Horiseon</h3>
+        <span style="font-weight: bold;">Horiseon</span>
       </div>
-    </section>
-
-    <section>
-      <div class="project-section">
-        <div class="project-header" id="project-header">
-          <h2>Projects</h2>
-          <div class="vertical-line-2"></div>
-        </div>
-        <div class="interactive-boxes" >
-          <a class="box1" href="https://gblow.github.io/update-code-urban-octo-telegram/">
-          <div>
-            <img class="portfolio-image" src="./Assets/project.jpeg" alt="Office with plants and frames hung up on wall"/>
-            <p> Project <span class="subtitle">Horiseon</span></p> 
-          </div>
-        </a>
-          <div class="box"> 
-            <p>LED Wall <span class="subtitle"> Coming Soon! </span></p>
-            <img class="portfolio-image" src="./Assets/LED.jpeg" alt="Streets of a walkable, vehicle-free, small town in Italy (taken on film)">
-          </div>
-          <div class="box"> 
-            <p>Calculator <span class="subtitle"> Coming Soon!</span></p>
-            <img class="portfolio-image" src="./Assets/calculator.jpeg" alt="Travel">
-          </div>
-          <div class="box"> 
-            <p>Pastel Puzzels <span class="subtitle"> Coming Soon!</p>
-            <img class="portfolio-image" src="./Assets/puzzel.jpeg" alt="Decor ">
-          </div>
-          <div class="box"> 
-            <p> Run Buddy <span class="subtitle"> Coming Soon! </span></p>
-            <img class="portfolio-image" src="./Assets/runbuddy.jpeg" alt="Flower">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <section class="contact-section">
-          <div class="contact-header" id="contact-header">
-              <h2>Contact Me</h2>
-              <div class="vertical-line-3"></div>
-          </div>
-          <ul class="contact-list">
-              <li><a href="mailto:Giovanniblow@gmail.com">Email</a></li>
-              <li><a href="https://github.com/gblow" target="_blank">Github</a></li>
-
-        
-          </ul>
-      </section>
-  </footer>
-  
-
-
-  
-  </main>
     
+      <a href="#"class="flex-item weather">
+      <div>
+        <h3>Daily Weather App</h3>
+        <span style="font-weight: bold;">Traveling? Search the weather before you leave</span>
+      </div>
+
+      <a href="#" class="flex-item comingSoon">
+        <div>
+          <h3>More Comng Soon!</h3>
+          <span style="font-weight: bold;">Come back soon for more web apps</span>
+        </div>
+      </a>
+
+</section>
+
+<!-- contact container -->
+<section class="section-contact" id="contactMe">
+  <h2>Contact Me</h2>
+  <div>
+    <ul class="contact-list">
+      <li><a href="mailto:Giovanniblow@gmail.com">Email</a></li>
+      <li><a href="https://github.com/gblow" target="_blank">Github</a></li>
+    </ul>
+  </div>
+</section>
+</main>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
