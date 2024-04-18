@@ -26,13 +26,13 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-## Technologies Used
-HTML
-CSS
-Flexbox
-Media Queries
-CSS Variables
+## References
+I tried to recreate the example webpage image layout as much as possible
 
-## Installation
+ ## Questions
+  
+ Have questions? Contact me using the following links:
 
-N/A
+ [GitHub](https://github.com/gblow)
+  
+ [Email: giovanniblow@gmail.com](mailto:giovanniblow@gmail.com)
